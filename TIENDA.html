@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUMAQ KIOSKO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>SUMAQ KIOSKO - COAR SAN MARTÍN</h1>
+    </header>
+
+    <section class="customer-section">
+        <label>Nombre del cliente:</label>
+        <input type="text" id="customer-name" placeholder="Tu nombre completo">
+    </section>
+
+    <section id="products-grid" class="products-grid"></section>
+
+    <section id="cart-section" class="cart-section">
+        <h2>🛒 Carrito de Compras</h2>
+        <div id="cart-items"></div>
+        <div id="cart-actions">
+            <p>Total: <span id="total-amount">S/ 0.00</span></p>
+            <button onclick="clearCart()">Vaciar carrito</button>
+            <button onclick="openYape()">Pagar con Yape</button>
+            <button onclick="payCash()">Pagar en efectivo</button>
+        </div>
+    </section>
+
+    <div id="notification" class="notification"></div>
+    <div id="cart-indicator" class="cart-indicator">0</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
